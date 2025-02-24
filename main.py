@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Form, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(debug=True)
 
@@ -58,3 +59,12 @@ def get_bmi(
     except ValueError as ve:
         raise HTTPException(status_code=400, detail=str(ve))
 
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Change to specific origins if necessary
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods
+    allow_headers=["*"],  # Allows all headers
+)
