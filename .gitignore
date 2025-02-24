@@ -1,0 +1,60 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# FastAPI & Flask
+instance/
+*.sqlite3
+*.db
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Compiled files
+*.out
+*.exe
+*.o
+*.a
+*.so
+*.dll
+
+# Coverage reports
+coverage/
+*.cover
+*.gcda
+*.gcno
+*.gcov
+
+# Git metadata
+*.swp
+*.swo
+
+# Secrets
+.env
+*.pem
+*.crt
+*.key
+
+
+venv
