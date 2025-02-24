@@ -57,4 +57,4 @@ coverage/
 *.key
 
 
-venv
+venv/
